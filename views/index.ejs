@@ -1,0 +1,34 @@
+
+
+<%- include("partials/header.ejs") %>
+
+
+<body>
+
+    <div class="main">
+
+        <div class="date">
+        <h2> <%= Todaydate %></h2>
+        </div>
+
+    <div class="box">
+        
+        <ul >
+            <li>Enter Your Work: </li>
+            <% for (i=0; i< newitemlist.length ;i++){ %>
+                <div class="item">
+                    <input type="checkbox">
+                    <li><%= newitemlist[i] %></li>
+                </div>
+            <% } %>
+        
+        <form action="/" method="post">
+            <input type="text" autocomplete="off" name="newitems" class="inputtype strikethrough" placeholder="New Item"/>
+            <a href="/"><button type="submit">+</button></a>
+            </form>
+        </ul>
+    </div>
+</body>
+
+<%- include("partials/footer.ejs") %>
+

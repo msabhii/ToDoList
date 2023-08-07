@@ -1,0 +1,148 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+
+
+
+
+.list{
+    display: inline;
+    padding: 10px;
+    padding-left:25pt;
+    align-content: center;
+    align-items: center;
+}
+.head-container{
+    display: flex;
+    color:darkslateblue;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color:darkslateblue;
+}
+a:hover{
+    
+    text-decoration: none;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.5rem;
+    text-align:center;
+    width: 450px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    position: absolute;
+    color: white;
+    background-color: #a683e3;
+    filter: drop-shadow(5px 5px 5px rgb(176, 173, 173));
+}
+.main{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    width: 50%;
+    padding: 10px;
+    height: 100%;
+    border-radius: 12px;
+    background-color: white;
+    margin-top:120px;
+    filter: drop-shadow(2px 2px 5px rgb(176,173,173));
+}
+
+.item{
+    min-height: 70px;
+    gap: 10pt;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+div p{
+    padding: 20px;
+    font-size: 1.25rem;
+}
+
+.inputtype{
+    margin-bottom: 0%;
+    text-align: center;
+    width: 80%;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+
+button{
+    border-radius: 50%;
+    background-color: #a683e3;
+    border: none;
+    color: white;
+    padding: auto;
+    font-size: 2rem;
+    float: right;
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 0 #7e6a9f;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:active{
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0 0 0 #6a578c;
+}
+
+
+
+[type="text"]:focus{
+    outline: none;
+    border-top: none;
+    border-right:none;
+    border-left: none;
+    border-bottom: 5px solid #a683e3;
+    border-radius: 5px;
+    
+}
+
+img{
+    position: absolute;
+}
+
+.strikethrough:checked {
+text-decoration: line-through;
+color: #7e6a9f;
+}
+
+.box li{
+    list-style-type: none;
+    font-size: 1.2rem ;
+    
+}
+
+input[type="checkbox"]:hover{
+    background-color: #6a578c;
+}
+input[type="checkbox"]:checked{
+    background-color:#7e6a9f;
+}
